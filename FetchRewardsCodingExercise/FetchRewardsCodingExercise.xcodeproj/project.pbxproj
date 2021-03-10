@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1DBE79F925F86CCD0052CD10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE79F825F86CCD0052CD10 /* AppDelegate.swift */; };
-		1DBE79FD25F86CCD0052CD10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE79FC25F86CCD0052CD10 /* ViewController.swift */; };
 		1DBE7A0025F86CCD0052CD10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE79FE25F86CCD0052CD10 /* Main.storyboard */; };
 		1DBE7A0225F86CCE0052CD10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE7A0125F86CCE0052CD10 /* Assets.xcassets */; };
 		1DBE7A0525F86CCE0052CD10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE7A0325F86CCE0052CD10 /* LaunchScreen.storyboard */; };
@@ -16,6 +15,7 @@
 		1DBE7A1525F86D290052CD10 /* SeatGeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A1325F86D280052CD10 /* SeatGeek.swift */; };
 		1DBE7A1625F86D290052CD10 /* UIImage+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A1425F86D290052CD10 /* UIImage+LoadImage.swift */; };
 		1DBE7A2A25F86E670052CD10 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A2925F86E670052CD10 /* Tests.swift */; };
+		1DBE7A3825F8777E0052CD10 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A3725F8777E0052CD10 /* SearchTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,6 @@
 /* Begin PBXFileReference section */
 		1DBE79F525F86CCD0052CD10 /* FetchRewardsCodingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRewardsCodingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DBE79F825F86CCD0052CD10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1DBE79FC25F86CCD0052CD10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1DBE79FF25F86CCD0052CD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DBE7A0125F86CCE0052CD10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DBE7A0425F86CCE0052CD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		1DBE7A2725F86E670052CD10 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DBE7A2925F86E670052CD10 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		1DBE7A2B25F86E670052CD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DBE7A3725F8777E0052CD10 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,7 @@
 		1DBE7A2225F86E190052CD10 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1DBE79FC25F86CCD0052CD10 /* ViewController.swift */,
+				1DBE7A3725F8777E0052CD10 /* SearchTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,9 +246,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DBE79FD25F86CCD0052CD10 /* ViewController.swift in Sources */,
 				1DBE7A0F25F86D070052CD10 /* SearchResults.swift in Sources */,
 				1DBE7A1625F86D290052CD10 /* UIImage+LoadImage.swift in Sources */,
+				1DBE7A3825F8777E0052CD10 /* SearchTableViewController.swift in Sources */,
 				1DBE7A1525F86D290052CD10 /* SeatGeek.swift in Sources */,
 				1DBE79F925F86CCD0052CD10 /* AppDelegate.swift in Sources */,
 			);
