@@ -2,10 +2,12 @@
 // Created by Shawn James
 // SearchResults.swift
 
+import Foundation
+
 // MARK: - Root
 
 struct SearchResults: Codable {
-    let events: [Event]
+    var events: [Event]
 }
 
 // MARK: - Event

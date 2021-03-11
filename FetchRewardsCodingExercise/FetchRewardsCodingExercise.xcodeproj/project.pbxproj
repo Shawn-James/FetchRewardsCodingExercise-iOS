@@ -16,6 +16,9 @@
 		1DBE7A1625F86D290052CD10 /* UIImage+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A1425F86D290052CD10 /* UIImage+LoadImage.swift */; };
 		1DBE7A2A25F86E670052CD10 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A2925F86E670052CD10 /* Tests.swift */; };
 		1DBE7A3825F8777E0052CD10 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A3725F8777E0052CD10 /* SearchTableViewController.swift */; };
+		1DBE7A3D25F8821F0052CD10 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A3C25F8821F0052CD10 /* EventTableViewCell.swift */; };
+		1DBE7A4325F8842A0052CD10 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A4225F8842A0052CD10 /* DetailViewController.swift */; };
+		1DBE7A4825F88F060052CD10 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A4725F88F060052CD10 /* EventViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		1DBE7A2925F86E670052CD10 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		1DBE7A2B25F86E670052CD10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DBE7A3725F8777E0052CD10 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
+		1DBE7A3C25F8821F0052CD10 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		1DBE7A4225F8842A0052CD10 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1DBE7A4725F88F060052CD10 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 				1DBE7A0D25F86D070052CD10 /* Model */,
 				1DBE7A1225F86D280052CD10 /* Networking */,
 				1DBE7A2225F86E190052CD10 /* Controllers */,
+				1DBE7A4625F884BD0052CD10 /* View Model */,
+				1DBE7A3B25F881E90052CD10 /* View */,
 				1DBE7A2025F86DF10052CD10 /* Storyboard */,
 				1DBE7A2125F86E040052CD10 /* Support Files */,
 				1DBE7A0625F86CCE0052CD10 /* Info.plist */,
@@ -132,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				1DBE7A3725F8777E0052CD10 /* SearchTableViewController.swift */,
+				1DBE7A4225F8842A0052CD10 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -143,6 +152,22 @@
 				1DBE7A2B25F86E670052CD10 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		1DBE7A3B25F881E90052CD10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1DBE7A3C25F8821F0052CD10 /* EventTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1DBE7A4625F884BD0052CD10 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1DBE7A4725F88F060052CD10 /* EventViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,11 +271,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DBE7A3D25F8821F0052CD10 /* EventTableViewCell.swift in Sources */,
 				1DBE7A0F25F86D070052CD10 /* SearchResults.swift in Sources */,
 				1DBE7A1625F86D290052CD10 /* UIImage+LoadImage.swift in Sources */,
 				1DBE7A3825F8777E0052CD10 /* SearchTableViewController.swift in Sources */,
 				1DBE7A1525F86D290052CD10 /* SeatGeek.swift in Sources */,
+				1DBE7A4825F88F060052CD10 /* EventViewModel.swift in Sources */,
 				1DBE79F925F86CCD0052CD10 /* AppDelegate.swift in Sources */,
+				1DBE7A4325F8842A0052CD10 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
