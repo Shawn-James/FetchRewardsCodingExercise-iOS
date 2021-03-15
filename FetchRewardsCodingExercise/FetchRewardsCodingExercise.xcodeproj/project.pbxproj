@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D78F92325F9CED8002F29B7 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1D78F92125F9CED8002F29B7 /* CoreDataModel.xcdatamodeld */; };
+		1D78F92725F9CF60002F29B7 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D78F92625F9CF60002F29B7 /* CoreDataStack.swift */; };
 		1DBE79F925F86CCD0052CD10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE79F825F86CCD0052CD10 /* AppDelegate.swift */; };
 		1DBE7A0025F86CCD0052CD10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE79FE25F86CCD0052CD10 /* Main.storyboard */; };
 		1DBE7A0225F86CCE0052CD10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE7A0125F86CCE0052CD10 /* Assets.xcassets */; };
@@ -18,7 +20,6 @@
 		1DBE7A3825F8777E0052CD10 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A3725F8777E0052CD10 /* SearchTableViewController.swift */; };
 		1DBE7A3D25F8821F0052CD10 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A3C25F8821F0052CD10 /* EventTableViewCell.swift */; };
 		1DBE7A4325F8842A0052CD10 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A4225F8842A0052CD10 /* DetailViewController.swift */; };
-		1DBE7A4825F88F060052CD10 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE7A4725F88F060052CD10 /* EventViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D78F92225F9CED8002F29B7 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		1D78F92625F9CF60002F29B7 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		1DBE79F525F86CCD0052CD10 /* FetchRewardsCodingExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchRewardsCodingExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DBE79F825F86CCD0052CD10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DBE79FF25F86CCD0052CD10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,7 +50,6 @@
 		1DBE7A3725F8777E0052CD10 /* SearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		1DBE7A3C25F8821F0052CD10 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		1DBE7A4225F8842A0052CD10 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		1DBE7A4725F88F060052CD10 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D78F92A25F9CF67002F29B7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				1D78F92125F9CED8002F29B7 /* CoreDataModel.xcdatamodeld */,
+				1D78F92625F9CF60002F29B7 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		1DBE79EC25F86CCD0052CD10 = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +103,6 @@
 				1DBE7A0D25F86D070052CD10 /* Model */,
 				1DBE7A1225F86D280052CD10 /* Networking */,
 				1DBE7A2225F86E190052CD10 /* Controllers */,
-				1DBE7A4625F884BD0052CD10 /* View Model */,
 				1DBE7A3B25F881E90052CD10 /* View */,
 				1DBE7A2025F86DF10052CD10 /* Storyboard */,
 				1DBE7A2125F86E040052CD10 /* Support Files */,
@@ -105,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				1DBE7A0E25F86D070052CD10 /* SearchResults.swift */,
+				1D78F92A25F9CF67002F29B7 /* CoreData */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,14 +171,6 @@
 				1DBE7A3C25F8821F0052CD10 /* EventTableViewCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		1DBE7A4625F884BD0052CD10 /* View Model */ = {
-			isa = PBXGroup;
-			children = (
-				1DBE7A4725F88F060052CD10 /* EventViewModel.swift */,
-			);
-			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +279,8 @@
 				1DBE7A1625F86D290052CD10 /* UIImage+LoadImage.swift in Sources */,
 				1DBE7A3825F8777E0052CD10 /* SearchTableViewController.swift in Sources */,
 				1DBE7A1525F86D290052CD10 /* SeatGeek.swift in Sources */,
-				1DBE7A4825F88F060052CD10 /* EventViewModel.swift in Sources */,
+				1D78F92725F9CF60002F29B7 /* CoreDataStack.swift in Sources */,
+				1D78F92325F9CED8002F29B7 /* CoreDataModel.xcdatamodeld in Sources */,
 				1DBE79F925F86CCD0052CD10 /* AppDelegate.swift in Sources */,
 				1DBE7A4325F8842A0052CD10 /* DetailViewController.swift in Sources */,
 			);
@@ -483,7 +487,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25Q6QHG285;
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,7 +508,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25Q6QHG285;
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -549,6 +553,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1D78F92125F9CED8002F29B7 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1D78F92225F9CED8002F29B7 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 1D78F92225F9CED8002F29B7 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1DBE79ED25F86CCD0052CD10 /* Project object */;
 }

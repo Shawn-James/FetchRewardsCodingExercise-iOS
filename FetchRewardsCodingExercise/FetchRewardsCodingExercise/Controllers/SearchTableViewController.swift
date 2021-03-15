@@ -40,7 +40,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
                                                selector: #selector(throttledSearch),
                                                object: nil)
 
-        perform(#selector(throttledSearch), with: nil, afterDelay: 0.2)
+        perform(#selector(throttledSearch), with: nil, afterDelay: 0.5)
         // throttling improves performance and reduces calls
     }
 
@@ -74,7 +74,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
 
 }
 
-extension UITableView {
+extension UITableView { // Cleans up cellForRowAt
     func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T where T: ReusableView {
         guard
             let cell = dequeueReusableCell(withIdentifier: T.reuseId, for: indexPath) as? T

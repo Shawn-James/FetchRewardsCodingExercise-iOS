@@ -5,6 +5,7 @@
 @testable import FetchRewardsCodingExercise
 import XCTest
 
+/// Networking Tests
 class FetchRewardsCodingExerciseTests: XCTestCase {
 
     private let seatGeek = SeatGeek()
@@ -30,7 +31,7 @@ class FetchRewardsCodingExerciseTests: XCTestCase {
         let imageView = UIImageView()
         let imageURL = "seatgeek.com/images/performers-landscape/utah-state-aggies-football-8d43f7/5668/huge.jpgwith"
 
-        imageView.loadImage(with: imageURL)
+        imageView.loadImage(with: imageURL) {}
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             XCTAssertNotNil(imageView.image)

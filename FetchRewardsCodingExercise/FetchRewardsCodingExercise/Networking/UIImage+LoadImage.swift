@@ -10,7 +10,7 @@ extension UIImageView {
 
     func loadImage(with urlString: String, completion: @escaping () -> Void) {
         if #available(iOS 13.0, *) {
-            image = UIImage(systemName: "photo")
+            image = UIImage(systemName: "photo") // Placeholder image
         }
 
         guard let url = URL(string: urlString) else { return }

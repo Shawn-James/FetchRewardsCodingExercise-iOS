@@ -22,6 +22,15 @@ class DetailViewController: UIViewController {
     }
 
     @IBAction func favoriteButtonPressed(_ sender: UIBarButtonItem) {
+        guard let event = event else { return }
+        let coreData = CoreDataStack.shared
+
+        if sender.title == "Interested?" {
+            coreData.saveFavorite(id: event.id, expiration: event.visibleUntilUtc)
+        } else {
+            coreData.deleteFavorite(id: Int64(event.id))
+        }
+
         sender.title = sender.title == "Favorite!" ? "Interested?" : "Favorite!"
     }
 
@@ -36,23 +45,10 @@ class DetailViewController: UIViewController {
         name.text = event.title
         location.text = event.venue.displayLocation
 
-        // date
-        let formatter = DateFormatter()
-        if let dateToFormat = formatter.date(from: event.datetimeLocal) {
-            switch (event.dateTbd, event.timeTbd) {
-            case (false, false):
-                formatter.dateFormat = "EEEE, MMMM d, yyyy, h:mm a"
-            case (false, true):
-                formatter.dateFormat = "EEEE, MMMM d, yyyy"
-            default:
-                dateTime.text = "TBD"
-            }
+        dateTime.text = event.datetimeLocal.displayDateString(dateTBD: event.dateTbd,
+                                                              timeTBD: event.timeTbd)
 
-            dateTime.text = formatter.string(from: dateToFormat)
-        } else {
-            dateTime.text = "Check website for date & time"
-        }
-
+        favoriteButton.title = CoreDataStack.shared.isFavorite(id: event.id) ? "Favorite!" : "Interested?"
     }
 
 }

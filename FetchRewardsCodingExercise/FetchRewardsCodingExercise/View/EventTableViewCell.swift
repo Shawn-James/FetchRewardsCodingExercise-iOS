@@ -24,43 +24,17 @@ class EventTableViewCell: UITableViewCell, ReusableView {
     private func loadView() {
         guard let event = event else { return }
 
-        // image
-        if #available(iOS 13.0, *) {
-            if eventImageView.image is UIImage {
-                if let imageUrl = event.performers.first?.image {
-                    eventImageView.loadImage(with: imageUrl) {}
-                }
-            }
-        } else {
-            if eventImageView.image == nil {
-                if let imageUrl = event.performers.first?.image {
-                    eventImageView.loadImage(with: imageUrl) {}
-                }
-            }
+        if let imageUrl = event.performers.first?.image {
+            eventImageView.loadImage(with: imageUrl) {}
         }
 
         name.text = event.title
         location.text = event.venue.displayLocation
 
-        // date
-        let formatter = DateFormatter()
-        if let dateToFormat = formatter.date(from: event.datetimeLocal) {
-            switch (event.dateTbd, event.timeTbd) {
-            case (false, false):
-                formatter.dateFormat = "EEEE, MMMM d, yyyy, h:mm a"
-            case (false, true):
-                formatter.dateFormat = "EEEE, MMMM d, yyyy"
-            default:
-                dateTime.text = "TBD"
-            }
-
-            dateTime.text = formatter.string(from: dateToFormat)
-        } else {
-            dateTime.text = "Check website for date & time"
-        }
-
+        dateTime.text = event.datetimeLocal.displayDateString(dateTBD: event.dateTbd,
+                                                              timeTBD: event.timeTbd)
     }
-
+    
 }
 
 extension ReusableView where Self: UIView {
