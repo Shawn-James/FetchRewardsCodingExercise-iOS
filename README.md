@@ -12,9 +12,9 @@
 	</p>
 </p>
 
-<p align="row">
-	<img src= "/media/gif1.gif" alt="GIF 1" width="400" >
-	<img src= "/media/gif2.gif" alt="GIF 2" width="400" >
+<p align="center">
+	<img src= "/media/gif1.gif" alt="GIF 1" width="200" >
+	<img src= "/media/gif2.gif" alt="GIF 2" width="200" >
 </p>
 
 ## Features
