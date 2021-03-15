@@ -6,15 +6,15 @@
 # FetchRewardsCodingExercise-iOS
 <br />
 <p align="center">
-	<img src="" alt="App Icon" width="80" height="80">
+	<img src="/media/SeatGeekLogo.png" alt="App Icon" width="80" height="80">
 	<p align="center">
 		Fetches events from SeatGeek API. User can search, show detail, and save favorites. Created as a submission for a FetchRewards challenge.
 	</p>
 </p>
 
 <p align="row">
-	<img src= "" alt="GIF 1" width="400" >
-	<img src= "" alt="GIF 2" width="400" >
+	<img src= "/media/gif1.gif" alt="GIF 1" width="400" >
+	<img src= "/media/gif2.gif" alt="GIF 2" width="400" >
 </p>
 
 ## Features
